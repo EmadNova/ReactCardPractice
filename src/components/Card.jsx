@@ -3,10 +3,9 @@ import styles from "../App.module.css";
 import Picture from "./Picture.jsx";
 import Title from "./Title.jsx";
 import Description from "./Description.jsx";
-import LearnMore from "./LearnMore.jsx";
-import Share from "./Share.jsx";
+import Button from "./Button.jsx";
 
-const Card = ({imageURL, name, des, button, button2 }) => {
+const Card = ({imageURL, name, des, button, button2}) => {
 
     return (
         <div>
@@ -18,8 +17,8 @@ const Card = ({imageURL, name, des, button, button2 }) => {
                     <Title name={name}/>
                     <Description des={des}/>
                     <div className={styles.card__buttons}>
-                        <Share button={button}/>
-                        <LearnMore button2={button2}/>
+                        <Button button={button}/>
+                        <Button button2={button2}/>
                     </div>
                 </div>
             </div>
